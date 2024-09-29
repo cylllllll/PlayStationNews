@@ -15,7 +15,7 @@ export async function GET(Astro) {
 
   return rss({
     title: channel.title,
-    description: '「Play Has No Limits」',
+    description: 'feedId:57240153638561792+userId:55141675020000256',
     site: url.origin,
     items: posts.map(item => ({
       link: `posts/${item.id}`,
