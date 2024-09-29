@@ -14,7 +14,7 @@ export async function GET(Astro) {
   return Response.json({
     version: 'https://jsonfeed.org/version/1.1',
     title: channel.title,
-    description: channel.description,
+    description: 'feedId:57240153638561792+userId:55141675020000256',
     home_page_url: url.toString(),
     items: posts.map(item => ({
       url: `${url.toString()}posts/${item.id}`,
