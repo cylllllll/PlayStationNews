@@ -17,7 +17,7 @@ export async function GET(Astro) {
 
   return rss({
     title: `${tag ? `${tag} | ` : ''}${channel.title}`,
-    description: channel.description,
+    description: 'feedId:57240153638561792+userId:55141675020000256',
     site: url.origin,
     trailingSlash: false,
     items: posts.map(item => ({
