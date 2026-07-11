@@ -9,7 +9,7 @@ export const GET: APIRoute = async (context) => {
 
   const response = await rss({
     title,
-    description: channel.description,
+    description: 'feedId:57240153638561792+userId:55141675020000256',
     site: siteUrl.toString(),
     trailingSlash: false,
     stylesheet: getBooleanEnv(import.meta.env, context, 'RSS_BEAUTIFY') ? '/rss.xsl' : undefined,
