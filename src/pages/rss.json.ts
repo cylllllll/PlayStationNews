@@ -6,7 +6,7 @@ export const GET: APIRoute = async (context) => {
 
   return new Response(JSON.stringify(feed), {
     headers: {
-      'Cache-Control': 'public, max-age=300',
+      'Cache-Control': 'public, max-age=1200',
       'Content-Type': 'application/feed+json; charset=utf-8',
     },
   })

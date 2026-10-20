@@ -23,7 +23,7 @@ export const GET: APIRoute = async (context) => {
   })
 
   response.headers.set('Content-Type', 'text/xml')
-  response.headers.set('Cache-Control', 'public, max-age=300')
+  response.headers.set('Cache-Control', 'public, max-age=1200')
 
   return response
 }
